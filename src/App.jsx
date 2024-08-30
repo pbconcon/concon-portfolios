@@ -1,12 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
+import Hero from './sections/Hero/Hero';
+import Projects from './sections/Projects/Projects';
+import Skills from './sections/Skills/Skills';
 
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello Gracelle!
-    </h1>
-  )
+    <>
+      <Hero />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
+
+export default App;
